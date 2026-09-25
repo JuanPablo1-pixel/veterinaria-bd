@@ -7,6 +7,7 @@ Material de práctica del ejercicio de la veterinaria (Unidad IV — DDL/DML/con
 - **`sql/01_esquema.sql`** — creación de las 6 tablas (`dueno`, `mascota`, `veterinario`, `consulta`, `medicamento`, `receta`) para Supabase/PostgreSQL. Es idempotente, se puede correr las veces que haga falta.
 - **`sql/02_datos.sql`** — datos de ejemplo para practicar. Se corre después del esquema.
 - **`ejercicios/veterinaria.md`** — guía de ejercicios de consultas sobre este modelo.
+- **`ejercicios repaso primera parte/`** — ejercicios integradores de repaso (Unidad I a IV bis): teoría, DER, DDL, consultas, subconsultas y transacciones.
 - **`practica/`** — espacio opcional para practicar el flujo de Pull Request (ver abajo).
 
 ## Cómo usar la base
