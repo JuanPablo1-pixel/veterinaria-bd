@@ -8,6 +8,8 @@ Material de práctica del ejercicio de la veterinaria (Unidad IV — DDL/DML/con
 - **`sql/02_datos.sql`** — datos de ejemplo para practicar. Se corre después del esquema.
 - **`sql/03_normalizacion_0fn_a_5fn.sql`** — la misma veterinaria en **cada etapa de normalización**: 22 tablas donde **el prefijo dice en qué forma normal está la tabla** (`fn0_` 1 tabla, `fn1_` 1, `fn2_` 2, `fn3_` 7, `fn3b_` 3 para BCNF, `fn4_` 3, `fn5_` 4, `fn6_` 1 para DKNF). Así, contar prefijos te dice cuántas tablas hay en cada etapa, y cada descomposición va de un prefijo al siguiente. Independiente de los scripts 01 y 02, también idempotente.
 - **`sql/04_normalizacion_consultas_clase.sql`** — un `SELECT` por etapa para recorrer la normalización en vivo. Incluye las verificaciones que importan: reconstruir la planilla desde las seis tablas de 3FN, y el caso de 5FN donde unir dos proyecciones produce una fila que no existe y unir tres la descarta.
+- **`sql/05_normalizacion_ejercicios.sql`** — las tablas de los ejercicios de la Unidad V: los tres que se hacen en clase (solo el enunciado, la descomposición la arman ustedes) y los cuatro de la casa (enunciado **y** solución). Todos sobre la veterinaria.
+- **`sql/06_normalizacion_ejercicios_consultas.sql`** — consultas de verificación: reconstruyen cada planilla original desde las tablas de la solución. Si la descomposición está bien, devuelven cero filas.
 - **`ejercicios/veterinaria.md`** — guía de ejercicios de consultas sobre este modelo.
 - **`ejercicios/normalizacion.md`** — ejercicios de normalización (Unidad V): tres planillas para llevar a 3FN, con el formato de entrega por Pull Request.
 - **`ejercicios/resoluciones normalizacion/`** — resolución paso a paso (1FN, 2FN y 3FN) de los ejercicios de normalización.
@@ -28,6 +30,7 @@ Material de práctica del ejercicio de la veterinaria (Unidad IV — DDL/DML/con
 2. Abrí `sql/04_normalizacion_consultas_clase.sql` y **corré un bloque por vez**: seleccionalo con el mouse y apretá `Ctrl+Enter` (`Cmd+Enter` en Mac). Supabase ejecuta solo lo seleccionado.
 3. Mirá cómo el mismo dato de la veterinaria va cambiando de lugar en cada forma normal.
 4. El bloque `[6.1]` en adelante usa `CREATE DOMAIN` para mostrar DKNF: la misma regla escrita como `CHECK` suelto (`fn5_turno`) o metida en el dominio (`fn6_turno`).
+5. Para los ejercicios, corré `sql/05_normalizacion_ejercicios.sql` y verificá tus respuestas con los bloques `[V.x]` de `sql/06_normalizacion_ejercicios_consultas.sql`: si tu descomposición es correcta, devuelven **cero filas**.
 
 > Si corrés el archivo entero de una, Supabase muestra únicamente el resultado del último `SELECT`. Por eso conviene ir de a bloques.
 
