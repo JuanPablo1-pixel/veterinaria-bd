@@ -13,7 +13,7 @@ Material de práctica del ejercicio de la veterinaria (Unidad IV — DDL/DML/con
 - **`ejercicios/veterinaria.md`** — guía de ejercicios de consultas sobre este modelo.
 - **`ejercicios/normalizacion.md`** — ejercicios de normalización de la **Clase 7**: tres planillas para llevar a 3FN, con el formato de entrega por Pull Request.
 - **`ejercicios/Normalización - 10 ejercicios hasta 3FN.md`** — los **diez** ejercicios que se corrigen en la **Clase 9**. En los primeros seis los datos vienen en una planilla; en los últimos cuatro hay que deducir las dependencias a partir de la descripción del sistema.
-- **`ejercicios/resoluciones normalizacion/`** — resolución paso a paso (1FN, 2FN y 3FN) de los ejercicios de normalización.
+- **`ejercicios/resoluciones normalizacion/`** — las resoluciones paso a paso (1FN, 2FN y 3FN) de las dos guías: la de la Clase 7 y la de los diez ejercicios de la Clase 9. Esta última muestra además **cómo quedan los datos** en cada forma normal, no solo el esquema.
 - **`ejercicios repaso primera parte/`** — ejercicios integradores de repaso (Unidad I a IV bis): teoría, DER, DDL, consultas, subconsultas y transacciones, con sus resoluciones. Incluye ejercicios extra de subconsultas en SELECT, FROM y WHERE sobre la veterinaria.
 - **`practica/`** — espacio opcional para practicar el flujo de Pull Request (ver abajo).
 
